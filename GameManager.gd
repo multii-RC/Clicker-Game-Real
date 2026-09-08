@@ -20,7 +20,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	CoinLabel.text = "Coin: " + str(coin)
 
 	#Reciever function for clicker button
 func _on_button_down() -> void:
@@ -28,7 +28,7 @@ func _on_button_down() -> void:
 	# Whenever clicker is clicked, add 10 coins
 	coin += ClickerStrength
 	
-	CoinLabel.text = "Coin: " + str(coin)
+	#CoinLabel.text = "Coin: " + str(coin)
 	print(coin)
 
 
