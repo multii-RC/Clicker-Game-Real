@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://btin7ro0ci00y" path="res://Scripts/GameManager.gd" id="1_heejh"]
 [ext_resource type="PackedScene" uid="uid://ue3dx70ek6ax" path="res://Scenes/clicker_button.tscn" id="2_4lhv2"]
 [ext_resource type="Script" uid="uid://bj3as4keb4d3v" path="res://Scripts/passive_generator.gd" id="3_heejh"]
+[ext_resource type="Texture2D" uid="uid://cdm8uqar1sxjr" path="res://Assets/icon.svg" id="4_4lhv2"]
 
 [node name="Game" type="Control" unique_id=901422257]
 layout_mode = 3
@@ -48,10 +49,13 @@ script = ExtResource("3_heejh")
 
 [node name="TextureRect" type="TextureRect" parent="Passive Generator" unique_id=404490816]
 layout_mode = 0
-offset_left = 42.0
-offset_top = 135.0
-offset_right = 82.0
-offset_bottom = 175.0
+offset_left = 89.0
+offset_top = -98.0
+offset_right = 177.0
+offset_bottom = -10.0
+texture = ExtResource("4_4lhv2")
+expand_mode = 5
+flip_v = true
 
 [node name="PassiveUpgradeButton" type="Button" parent="Passive Generator" unique_id=1360496863]
 layout_mode = 1
