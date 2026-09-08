@@ -1,8 +1,10 @@
 extends Control
 
-var strength: int
-signal coin_generator(int)
-
+@onready var CoinLabel: Label = $CoinLabel
+var PassiveStrength: int
+signal CoinGenerator(int)
+@onready var UpgradeCostLabel: Label = $UpgradeCostLabel
+var coin = 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -14,12 +16,14 @@ func _process(delta: float) -> void:
 
 
 func _on_upgrade_button_pressed() -> void:
+	print("Passive Upgrade Pressed")
+	# Check Cost
+	if Coin >= UpgradeCostLabel:
+		PassiveStrength = PassiveStrength * 2
+	# If have money: Double strength, Raise price	
 
-	# Check cost
-	# If haave money
-	# Double Strength, raise cost
 
 func _on_timer_timeout() -> void:
-
+	print("Passive Generation")
 	# Emit Signal
 	# Effects (Coin, Sound)
