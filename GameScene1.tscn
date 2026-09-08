@@ -120,9 +120,7 @@ offset_right = 168.0
 offset_bottom = 22.0
 text = "Upgrade:"
 
-[connection signal="ClickerSignal" from="ClickerButton" to="." method="_on_clicker_button_clicker_signal"]
 [connection signal="ClickerSignal" from="ClickerButton" to="." method="_on_clicker_signal"]
-[connection signal="pressed" from="ClickerButton" to="." method="_on_clicker_button_pressed"]
 [connection signal="pressed" from="Passive Generator/PassiveUpgradeButton" to="." method="_on_passive_upgrade_button_pressed"]
 [connection signal="timeout" from="Passive Generator/Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Passive Generator2/PassiveUpgradeButton" to="." method="_on_passive_upgrade_button_pressed"]
