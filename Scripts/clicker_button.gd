@@ -5,6 +5,7 @@ signal ClickerSignal(int)
 
 @onready var CoinScene: PackedScene = load("res://Scenes/coin.tscn")
 
+@export var Game: Node = $".."
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	ClickerStrength = 10
@@ -16,8 +17,9 @@ func _process(delta: float) -> void:
 
 func _on_upgrade_button_pressed() -> void:
 	print("Upgrade Pressed")
-
-	ClickerStrength = ClickerStrength * 2
+	if Game.coin >= ClickerStrength * 5:
+		ClickerStrength = ClickerStrength * 2
+		
 	
 
 func on_pressed() -> void:

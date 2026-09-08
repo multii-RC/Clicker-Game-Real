@@ -23,6 +23,7 @@ offset_left = 0.0
 offset_top = 0.0
 offset_right = 136.0
 offset_bottom = 141.0
+ClickerStrength = null
 
 [node name="CoinLabel" type="Label" parent="." unique_id=429810311]
 layout_mode = 0
