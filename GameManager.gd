@@ -43,6 +43,7 @@ func _on_passive_upgrade_button_pressed() -> void:
 	if coin >= PassiveCost:
 		PassiveStrength = PassiveStrength + 1 * 2
 		coin = coin - PassiveCost
+		PassiveCost = PassiveCost * 10
 	# If have money: Double strength, Raise price	
 	UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
 
