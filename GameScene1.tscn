@@ -60,7 +60,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="UpgradeButton" type="Button" parent="Passive Generator" unique_id=1360496863]
+[node name="PassiveUpgradeButton" type="Button" parent="Passive Generator" unique_id=1360496863]
 layout_mode = 0
 offset_left = 196.0
 offset_top = 250.0
@@ -80,5 +80,5 @@ text = "Upgrade:"
 
 [connection signal="pressed" from="ClickerButton" to="." method="_on_button_down"]
 [connection signal="pressed" from="ClickerButton/UpgradeButton" to="." method="_on_upgrade_button_pressed"]
-[connection signal="pressed" from="Passive Generator/UpgradeButton" to="Passive Generator" method="_on_upgrade_button_pressed"]
+[connection signal="pressed" from="Passive Generator/PassiveUpgradeButton" to="." method="_on_passive_upgrade_button_pressed"]
 [connection signal="timeout" from="Passive Generator/Timer" to="Passive Generator" method="_on_timer_timeout"]

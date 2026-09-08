@@ -4,10 +4,16 @@ var coin: int
 @export var ClickerStrength: int
 @onready var CoinLabel: Label = $CoinLabel
 
+var PassiveStrength: int
+signal CoinGenerator(int)
+@onready var UpgradeCostLabel: Label = $UpgradeCostLabel
+var PassiveCost: int
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 # Setting intial coin to 0
 	coin = 0
+	PassiveCost = 10
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -28,3 +34,18 @@ func _on_upgrade_button_pressed() -> void:
 	print("Upgrade Pressed")
 
 	ClickerStrength = ClickerStrength * 2
+
+func _on_passive_upgrade_button_pressed() -> void:
+	print("Passive Upgrade Pressed")
+	# Check Cost
+	if coin >= PassiveCost:
+		PassiveStrength = PassiveStrength * 2
+		coin = coin - PassiveCost
+	# If have money: Double strength, Raise price	
+	UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
+
+	
+func _on_timer_timeout() -> void:
+	print("Passive Generation")
+	# Emit Signal
+	# Effects (Coin, Sound)
