@@ -86,7 +86,53 @@ offset_right = 168.0
 offset_bottom = 22.0
 text = "Upgrade:"
 
+[node name="Passive Generator2" type="Control" parent="." unique_id=364949201]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 66.0
+offset_top = 275.0
+offset_right = -877.0
+offset_bottom = -317.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_i44se")
+
+[node name="TextureRect" type="TextureRect" parent="Passive Generator2" unique_id=1921782717]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 135.0
+offset_right = 82.0
+offset_bottom = 175.0
+
+[node name="PassiveUpgradeButton" type="Button" parent="Passive Generator2" unique_id=563798454]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.411
+anchor_top = 4.625
+anchor_right = 0.411
+anchor_bottom = 4.625
+offset_left = -4.060013
+offset_top = -260.0
+offset_right = 98.93999
+offset_bottom = -240.0
+
+[node name="Timer" type="Timer" parent="Passive Generator2" unique_id=272456395]
+wait_time = 10.0
+autostart = true
+
+[node name="UpgradeCostLabel" type="Label" parent="Passive Generator2" unique_id=1737418293]
+layout_mode = 0
+offset_left = 97.0
+offset_top = -4.0
+offset_right = 168.0
+offset_bottom = 22.0
+text = "Upgrade:"
+
 [connection signal="pressed" from="ClickerButton" to="." method="_on_button_down"]
 [connection signal="pressed" from="ClickerButton/UpgradeButton" to="." method="_on_upgrade_button_pressed"]
 [connection signal="pressed" from="Passive Generator/PassiveUpgradeButton" to="." method="_on_passive_upgrade_button_pressed"]
 [connection signal="timeout" from="Passive Generator/Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Passive Generator2/PassiveUpgradeButton" to="." method="_on_passive_upgrade_button_pressed"]
+[connection signal="timeout" from="Passive Generator2/Timer" to="." method="_on_timer_timeout"]
