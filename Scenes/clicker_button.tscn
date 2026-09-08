@@ -18,7 +18,7 @@ offset_left = 28.0
 offset_top = 150.0
 offset_right = 109.0
 offset_bottom = 181.0
-text = "Upgrade"
+text = "Upgrade:"
 
 [node name="RigidBody2D" parent="." unique_id=2136376879 instance=ExtResource("3_eiqog")]
 
