@@ -23,4 +23,5 @@ func _on_upgrade_button_pressed() -> void:
 func on_pressed() -> void:
 	ClickerSignal.emit(ClickerStrength)
 	var c = CoinScene.instantiate()
+	add_child(c)
 	c.global_position = get_global_mouse_position()
