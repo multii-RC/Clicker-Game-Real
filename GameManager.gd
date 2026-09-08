@@ -15,6 +15,7 @@ func _ready() -> void:
 	coin = 0
 	PassiveCost = 10
 	PassiveStrength = 0
+	UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
