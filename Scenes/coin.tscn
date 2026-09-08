@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://dg1ofr16u7535"]
 
-[ext_resource type="Script" uid="uid://cu57xeowuqu8h" path="res://Scripts/coin.gd" id="1_jgi06"]
+[ext_resource type="Script" uid="uid://cu57xeowuqu8h" path="res://Scripts/coin.gd" id="1_g537i"]
 [ext_resource type="Texture2D" uid="uid://dftr71q5eawbq" path="res://Assets/Animated Coins.png" id="1_wltir"]
 [ext_resource type="AudioStream" uid="uid://dwstqiydthv47" path="res://Assets/CoinSFX.mp3" id="3_g537i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nmvex"]
-radius = 113.15918
+radius = 18.027756
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jiowd"]
 atlas = ExtResource("1_wltir")
@@ -72,24 +72,26 @@ animations = [{
 }]
 
 [node name="coin" type="RigidBody2D" unique_id=2136376879]
-position = Vector2(387, 328)
-script = ExtResource("1_jgi06")
+position = Vector2(343, 143)
+script = ExtResource("1_g537i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=156625209]
-position = Vector2(-8, -9)
+position = Vector2(1, 2)
 shape = SubResource("CircleShape2D_nmvex")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2085505485]
-position = Vector2(-6, -7)
-scale = Vector2(13.266668, 11.6875)
+position = Vector2(2.7500153, 1.75)
+scale = Vector2(2.6333334, 2.2187502)
 sprite_frames = SubResource("SpriteFrames_nmvex")
 autoplay = "default"
 frame = 7
 frame_progress = 0.26107582
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=85195832]
+position = Vector2(3, 4)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1810978072]
+position = Vector2(2, 2)
 stream = ExtResource("3_g537i")
 autoplay = true
 
