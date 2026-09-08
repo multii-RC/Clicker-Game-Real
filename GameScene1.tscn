@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cs1gboosef7nn"]
+
+[ext_resource type="Texture2D" uid="uid://cdm8uqar1sxjr" path="res://icon.svg" id="1_e48gw"]
+[ext_resource type="Script" uid="uid://btin7ro0ci00y" path="res://GameManager.gd" id="1_i44se"]
+
+[node name="Game" type="Control" unique_id=901422257]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 4.0
+offset_right = 25.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i44se")
+ClickerStrength = 10
+
+[node name="ClickerButton" type="Button" parent="." unique_id=629354456]
+layout_mode = 0
+offset_left = -25.0
+offset_top = -4.0
+offset_right = 111.0
+offset_bottom = 137.0
+icon = ExtResource("1_e48gw")
+
+[node name="UpgradeButton" type="Button" parent="ClickerButton" unique_id=1522806178]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 150.0
+offset_right = 109.0
+offset_bottom = 181.0
+text = "Upgrade"
+
+[node name="CoinLabel" type="Label" parent="." unique_id=429810311]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 52.0
+offset_right = 229.0
+offset_bottom = 75.0
+text = "Coin: 0"
+
+[connection signal="pressed" from="ClickerButton" to="." method="_on_button_down"]
+[connection signal="pressed" from="ClickerButton/UpgradeButton" to="." method="_on_upgrade_button_pressed"]
