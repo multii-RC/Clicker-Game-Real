@@ -38,13 +38,13 @@ func _on_clicker_signal(ClickerStrength) -> void:
 	#ClickerStrength = ClickerStrength * 2
 ## Moved to Clicker
 
-func _on_passive_upgrade_button_pressed() -> void:
-	print("Passive Upgrade Pressed")
+#func _on_passive_upgrade_button_pressed() -> void:
+	#print("Passive Upgrade Pressed")
 	# Check Cost
-	if coin >= PassiveCost:
-		PassiveStrength = (PassiveStrength + 1) * 2
-		coin = coin - PassiveCost
-		PassiveCost = PassiveCost * 10
+	#if coin >= PassiveCost:
+		#PassiveStrength = (PassiveStrength + 1) * 2
+		#coin = coin - PassiveCost
+		#PassiveCost = PassiveCost * 10
 	# If have money: Double strength, Raise price	
 	
 
@@ -54,3 +54,8 @@ func _on_timer_timeout() -> void:
 	# Emit Signal
 	coin += PassiveStrength
 	# Effects (Coin, Sound)
+	
+func _on_coin_generated(PassiveStrength) -> void:
+	coin = coin + PassiveStrength
+	print("Main: Passive Generation")
+	

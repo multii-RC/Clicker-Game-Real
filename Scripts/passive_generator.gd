@@ -19,17 +19,19 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+		UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
+
 
 
 func _on_upgrade_button_pressed() -> void:
 	print("Passive Upgrade Pressed")
 	# Check Cost
-	if Game.coin >= UpgradeCostLabel:
-		PassiveStrength = PassiveStrength * 2
+	if Game.coin >= PassiveCost:
+		Game.coin = Game.coin - PassiveCost
+		PassiveStrength = (PassiveStrength + 1) * 2
+		PassiveCost = PassiveCost * 10
 	# If have money: Double strength, Raise price	
-	UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
-
+	
 func _on_timer_timeout() -> void:
 	print("Passive Generation")
 	 #Emit Signal
@@ -38,3 +40,4 @@ func _on_timer_timeout() -> void:
 	add_child(c)
 	c.global_position = get_global_mouse_position()
 	CoinGenerator.emit(PassiveStrength)
+	
