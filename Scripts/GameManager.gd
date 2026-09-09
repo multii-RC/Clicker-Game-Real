@@ -5,17 +5,16 @@ var coin: int
 @onready var CoinLabel: Label = $CoinLabel
 
 var PassiveStrength: int
-signal CoinGenerated(int)
-@onready var UpgradeCostLabel: Label = $"Passive Generator/UpgradeCostLabel"
-var PassiveCost: int
+#@onready var UpgradeCostLabel: Label = $"Passive Generator/UpgradeCostLabel"
+#var PassiveCost: int
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 # Setting intial coin to 0
 	coin = 0
-	PassiveCost = 10
+	#PassiveCost = 10
 	PassiveStrength = 0
-	UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
+	#UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -47,7 +46,7 @@ func _on_passive_upgrade_button_pressed() -> void:
 		coin = coin - PassiveCost
 		PassiveCost = PassiveCost * 10
 	# If have money: Double strength, Raise price	
-	UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
+	
 
 	
 func _on_timer_timeout() -> void:
