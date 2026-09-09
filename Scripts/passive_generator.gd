@@ -12,10 +12,13 @@ signal CoinGenerated(int)
 
 @export var Game: Node
 
+@export var timeInterval: float
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	PassiveCost = 10
 	PassiveStrength = 0
+	$Timer.wait_time = timeInterval
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

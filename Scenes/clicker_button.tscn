@@ -14,10 +14,10 @@ script = ExtResource("2_g3iiw")
 
 [node name="UpgradeButton" type="Button" parent="." unique_id=2096028657]
 layout_mode = 0
-offset_left = 28.0
-offset_top = 150.0
-offset_right = 109.0
-offset_bottom = 181.0
+offset_left = 1.0
+offset_top = 148.0
+offset_right = 135.0
+offset_bottom = 179.0
 text = "Upgrade:"
 
 [node name="RigidBody2D" parent="." unique_id=2136376879 instance=ExtResource("3_eiqog")]

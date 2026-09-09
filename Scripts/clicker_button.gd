@@ -19,6 +19,7 @@ func _process(delta: float) -> void:
 func _on_upgrade_button_pressed() -> void:
 	print("Upgrade Pressed")
 	if Game.coin >= ClickerStrength * 5:
+		## this not a UI thing?
 		Game.coin = Game.coin - ClickerStrength * 5
 		ClickerStrength = ClickerStrength * 2
 		

@@ -17,16 +17,11 @@ grow_vertical = 2
 script = ExtResource("1_oa0t0")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1796904039]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.63600004
-anchor_top = -0.96400005
-anchor_right = 0.63600004
-anchor_bottom = -0.96400005
-offset_left = -43.92401
-offset_top = -44.016
-offset_right = 44.07599
-offset_bottom = 43.984
+layout_mode = 0
+offset_left = 90.0
+offset_top = -91.0
+offset_right = 178.07599
+offset_bottom = -2.9240112
 texture = ExtResource("2_2lm5m")
 expand_mode = 5
 flip_v = true
@@ -54,6 +49,13 @@ offset_top = -4.0
 offset_right = 168.0
 offset_bottom = 22.0
 text = "Upgrade:"
+
+[node name="CoinSpawn" type="Control" parent="." unique_id=10665723]
+anchors_preset = 0
+offset_left = 132.0
+offset_top = -53.0
+offset_right = 172.0
+offset_bottom = -13.0
 
 [connection signal="pressed" from="PassiveUpgradeButton" to="." method="_on_upgrade_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
