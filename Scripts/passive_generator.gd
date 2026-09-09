@@ -12,8 +12,11 @@ signal CoinGenerated(int)
 
 @export var Game: Node
 
+# make it so i can scale the timer across the gens
 @export var timeInterval: float
 
+# make it so I can scale passive strength across gens
+@export var passiveScale: float
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	PassiveCost = 10
@@ -32,7 +35,7 @@ func _on_upgrade_button_pressed() -> void:
 	# Check Cost
 	if Game.coin >= PassiveCost:
 		Game.coin = Game.coin - PassiveCost
-		PassiveStrength = (PassiveStrength + 1) * 2
+		PassiveStrength = (PassiveStrength + passiveScale) * 2
 		PassiveCost = PassiveCost * 10
 	# If have money: Double strength, Raise price	
 	
