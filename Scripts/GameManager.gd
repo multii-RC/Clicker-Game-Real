@@ -58,4 +58,4 @@ func _on_clicker_signal(ClickerStrength) -> void:
 
 func _on_coin_generated(PassiveStrength) -> void:
 	coin = coin + PassiveStrength
-	print("Main: Passive Generation")
+	print("Main: Passive Generation Signal Received")

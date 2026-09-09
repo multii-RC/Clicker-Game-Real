@@ -38,8 +38,9 @@ func _on_timer_timeout() -> void:
 	 #Emit Signal
 	CoinGenerated.emit(PassiveStrength)
 	 #Effects (Coin, Sound)
-	var c = CoinScene.instantiate()
-	add_child(c)
-	c.global_position = get_global_mouse_position()
+	if PassiveStrength > 0:
+		var c = CoinScene.instantiate()
+		add_child(c)
+		c.global_position = $TextureRect.global_position
 	
 	
