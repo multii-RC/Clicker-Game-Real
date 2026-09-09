@@ -38,7 +38,7 @@ layout_mode = 1
 Game = NodePath("..")
 timeInterval = 2.5
 passiveScale = 8
-passiveUpgradeCost = 100
+passiveUpgradeCost = 50
 
 [node name="Passive Generator2" parent="." unique_id=588450597 node_paths=PackedStringArray("Game") instance=ExtResource("3_heejh")]
 layout_mode = 1
@@ -49,7 +49,7 @@ offset_bottom = -292.0
 Game = NodePath("..")
 timeInterval = 1.0
 passiveScale = 5
-passiveUpgradeCost = 1000
+passiveUpgradeCost = 100
 
 [node name="Passive Generator3" parent="." unique_id=1285935763 node_paths=PackedStringArray("Game") instance=ExtResource("3_heejh")]
 layout_mode = 1
