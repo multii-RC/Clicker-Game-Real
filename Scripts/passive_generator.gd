@@ -16,10 +16,14 @@ signal CoinGenerated(int)
 @export var timeInterval: float
 
 # make it so I can scale passive strength across gens
-@export var passiveScale: float
+@export var passiveScale: int
+
+# make it so I can scale passive cost across gens
+@export var passiveUpgradeCost: int
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	PassiveCost = 10
+	PassiveCost = passiveUpgradeCost
 	PassiveStrength = 0
 	$Timer.wait_time = timeInterval
 

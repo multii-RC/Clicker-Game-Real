@@ -37,7 +37,8 @@ text = "Coin: 0"
 layout_mode = 1
 Game = NodePath("..")
 timeInterval = 2.5
-passiveScale = 7.5
+passiveScale = 8
+passiveUpgradeCost = 100
 
 [node name="Passive Generator2" parent="." unique_id=588450597 node_paths=PackedStringArray("Game") instance=ExtResource("3_heejh")]
 layout_mode = 1
@@ -47,7 +48,8 @@ offset_right = -1008.0
 offset_bottom = -292.0
 Game = NodePath("..")
 timeInterval = 1.0
-passiveScale = 5.0
+passiveScale = 5
+passiveUpgradeCost = 1000
 
 [node name="Passive Generator3" parent="." unique_id=1285935763 node_paths=PackedStringArray("Game") instance=ExtResource("3_heejh")]
 layout_mode = 1
@@ -57,7 +59,8 @@ offset_right = -745.0
 offset_bottom = -496.0
 Game = NodePath("..")
 timeInterval = 5.0
-passiveScale = 10.0
+passiveScale = 12
+passiveUpgradeCost = 100
 
 [connection signal="ClickerSignal" from="ClickerButton" to="." method="_on_clicker_signal"]
 [connection signal="CoinGenerated" from="Passive Generator" to="." method="_on_coin_generated"]
