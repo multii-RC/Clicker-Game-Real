@@ -52,8 +52,8 @@ text = "Upgrade:"
 
 [node name="CoinSpawn" type="Control" parent="." unique_id=10665723]
 anchors_preset = 0
-offset_left = 132.0
-offset_top = -53.0
+offset_left = 134.0
+offset_top = -48.0
 offset_right = 172.0
 offset_bottom = -13.0
 

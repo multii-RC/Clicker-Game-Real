@@ -44,6 +44,6 @@ func _on_timer_timeout() -> void:
 	if PassiveStrength > 0:
 		var c = CoinScene.instantiate()
 		add_child(c)
-		c.global_position = $TextureRect.global_position
+		c.global_position = $CoinSpawn.global_position
 	
 	
