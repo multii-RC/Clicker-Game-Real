@@ -4,7 +4,7 @@ var coin: int
 #@export var ClickerStrength: int
 @onready var CoinLabel: Label = $CoinLabel
 
-var PassiveStrength: int
+#var PassiveStrength: int
 #@onready var UpgradeCostLabel: Label = $"Passive Generator/UpgradeCostLabel"
 #var PassiveCost: int
 
@@ -13,7 +13,7 @@ func _ready() -> void:
 # Setting intial coin to 0
 	coin = 0
 	#PassiveCost = 10
-	PassiveStrength = 0
+	#PassiveStrength = 0
 	#UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
 
 
@@ -49,13 +49,13 @@ func _on_clicker_signal(ClickerStrength) -> void:
 	
 
 	
-func _on_timer_timeout() -> void:
-	print("Passive Generation")
+#func _on_timer_timeout() -> void:
+	#print("Passive Generation")
 	# Emit Signal
-	coin += PassiveStrength
+	#coin += PassiveStrength
 	# Effects (Coin, Sound)
 	
+
 func _on_coin_generated(PassiveStrength) -> void:
 	coin = coin + PassiveStrength
 	print("Main: Passive Generation")
-	
