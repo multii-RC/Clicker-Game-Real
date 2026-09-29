@@ -1,23 +1,23 @@
 [gd_scene format=3 uid="uid://ue3dx70ek6ax"]
 
-[ext_resource type="Texture2D" uid="uid://cdm8uqar1sxjr" path="res://Assets/icon.svg" id="1_dniwd"]
+[ext_resource type="Texture2D" uid="uid://3qbru7jcoyvj" path="res://Assets/bow-removebg-preview.png" id="1_eiqog"]
 [ext_resource type="Script" uid="uid://cq4jhrqigcr0v" path="res://Scripts/clicker_button.gd" id="2_g3iiw"]
 [ext_resource type="PackedScene" uid="uid://dg1ofr16u7535" path="res://Scenes/coin.tscn" id="3_eiqog"]
 
 [node name="ClickerButton" type="Button" unique_id=1654807863]
-offset_left = -25.0
-offset_top = -4.0
-offset_right = 111.0
-offset_bottom = 137.0
-icon = ExtResource("1_dniwd")
+offset_left = 282.0
+offset_top = 132.0
+offset_right = 490.0
+offset_bottom = 337.0
+icon = ExtResource("1_eiqog")
 script = ExtResource("2_g3iiw")
 
 [node name="UpgradeButton" type="Button" parent="." unique_id=2096028657]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 148.0
-offset_right = 135.0
-offset_bottom = 179.0
+offset_left = 41.0
+offset_top = 216.0
+offset_right = 175.0
+offset_bottom = 247.0
 text = "Upgrade:"
 
 [node name="RigidBody2D" parent="." unique_id=2136376879 instance=ExtResource("3_eiqog")]

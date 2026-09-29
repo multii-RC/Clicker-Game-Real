@@ -5,9 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://doarulanr6eta" path="res://Assets/battleback2.png" id="2_g571m"]
 [ext_resource type="PackedScene" uid="uid://bkevr42k8tlnw" path="res://Scenes/passive_generator.tscn" id="3_heejh"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4lhv2"]
-load_path = "res://.godot/imported/bear_trap_asset-removebg-preview.png-daac544e4bbe509ff7a35272b8e2a048.ctex"
-
 [node name="Game" type="Control" unique_id=901422257]
 layout_mode = 3
 anchors_preset = 15
@@ -31,23 +28,28 @@ texture = ExtResource("2_g571m")
 
 [node name="ClickerButton" parent="." unique_id=1654807863 node_paths=PackedStringArray("Game") instance=ExtResource("2_4lhv2")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 136.0
-offset_bottom = 141.0
-icon = SubResource("CompressedTexture2D_4lhv2")
+offset_left = 328.0
+offset_top = 192.0
+offset_right = 536.0
+offset_bottom = 397.0
 Game = NodePath("..")
 
 [node name="CoinLabel" type="Label" parent="." unique_id=429810311]
 layout_mode = 0
-offset_left = 176.0
-offset_top = 52.0
-offset_right = 229.0
-offset_bottom = 75.0
+offset_left = -3.0
+offset_top = 3.0
+offset_right = 137.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.8643809, 0, 0.14385241, 1)
+theme_override_font_sizes/font_size = 32
 text = "Coin: 0"
 
 [node name="Passive Generator" parent="." unique_id=622182275 node_paths=PackedStringArray("Game") instance=ExtResource("3_heejh")]
 layout_mode = 1
+offset_left = 566.0
+offset_top = 574.0
+offset_right = -377.0
+offset_bottom = -18.0
 Game = NodePath("..")
 timeInterval = 2.5
 passiveScale = 8
@@ -55,10 +57,10 @@ passiveUpgradeCost = 50
 
 [node name="Passive Generator2" parent="." unique_id=588450597 node_paths=PackedStringArray("Game") instance=ExtResource("3_heejh")]
 layout_mode = 1
-offset_left = -65.0
-offset_top = 300.0
-offset_right = -1008.0
-offset_bottom = -292.0
+offset_left = 1.0
+offset_top = 521.0
+offset_right = -942.0
+offset_bottom = -71.0
 Game = NodePath("..")
 timeInterval = 1.0
 passiveScale = 5
@@ -66,10 +68,10 @@ passiveUpgradeCost = 100
 
 [node name="Passive Generator3" parent="." unique_id=1285935763 node_paths=PackedStringArray("Game") instance=ExtResource("3_heejh")]
 layout_mode = 1
-offset_left = 198.0
-offset_top = 96.0
-offset_right = -745.0
-offset_bottom = -496.0
+offset_left = 723.0
+offset_top = 312.0
+offset_right = -220.0
+offset_bottom = -280.0
 Game = NodePath("..")
 timeInterval = 5.0
 passiveScale = 12

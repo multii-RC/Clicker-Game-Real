@@ -72,7 +72,7 @@ animations = [{
 }]
 
 [node name="coin" type="RigidBody2D" unique_id=2136376879]
-position = Vector2(343, 143)
+position = Vector2(1320, 537)
 script = ExtResource("1_g537i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=156625209]

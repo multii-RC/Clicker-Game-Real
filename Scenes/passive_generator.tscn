@@ -1,30 +1,29 @@
 [gd_scene format=3 uid="uid://bkevr42k8tlnw"]
 
 [ext_resource type="Script" uid="uid://bj3as4keb4d3v" path="res://Scripts/passive_generator.gd" id="1_oa0t0"]
-[ext_resource type="Texture2D" uid="uid://cdm8uqar1sxjr" path="res://Assets/icon.svg" id="2_2lm5m"]
+[ext_resource type="Texture2D" uid="uid://bld0nvkyqf8bg" path="res://Assets/bear_trap_asset-removebg-preview.png" id="2_oa0t0"]
 
 [node name="Passive Generator" type="Control" unique_id=622182275]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 65.0
-offset_top = 206.0
-offset_right = -878.0
-offset_bottom = -386.0
+offset_left = 98.0
+offset_top = 263.0
+offset_right = -845.0
+offset_bottom = -329.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_oa0t0")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1796904039]
 layout_mode = 0
-offset_left = 90.0
+offset_left = 84.0
 offset_top = -91.0
-offset_right = 178.07599
-offset_bottom = -2.9240112
-texture = ExtResource("2_2lm5m")
+offset_right = 186.0
+offset_bottom = -5.0
+texture = ExtResource("2_oa0t0")
 expand_mode = 5
-flip_v = true
 
 [node name="PassiveUpgradeButton" type="Button" parent="." unique_id=702884960]
 layout_mode = 1
@@ -33,10 +32,10 @@ anchor_left = 0.411
 anchor_top = 4.625
 anchor_right = 0.411
 anchor_bottom = 4.625
-offset_left = -4.060013
-offset_top = -260.0
-offset_right = 98.93999
-offset_bottom = -240.0
+offset_left = -4.899002
+offset_top = -261.0
+offset_right = 111.26201
+offset_bottom = -241.0
 
 [node name="Timer" type="Timer" parent="." unique_id=393202892]
 wait_time = 2.0
