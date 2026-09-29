@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://da2qhle46d547"
+path="res://.godot/imported/Squirrel - Sound Effect _ ProSounds [sThps8W0HjA].mp3-683dcc19018ae9f45467ad50494c1eb7.mp3str"
+
+[deps]
+
+source_file="res://Assets/Squirrel - Sound Effect _ ProSounds [sThps8W0HjA].mp3"
+dest_files=["res://.godot/imported/Squirrel - Sound Effect _ ProSounds [sThps8W0HjA].mp3-683dcc19018ae9f45467ad50494c1eb7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

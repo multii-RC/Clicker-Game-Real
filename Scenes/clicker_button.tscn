@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://3qbru7jcoyvj" path="res://Assets/bow-removebg-preview.png" id="1_eiqog"]
 [ext_resource type="Script" uid="uid://cq4jhrqigcr0v" path="res://Scripts/clicker_button.gd" id="2_g3iiw"]
-[ext_resource type="PackedScene" uid="uid://dg1ofr16u7535" path="res://Scenes/coin.tscn" id="3_eiqog"]
+[ext_resource type="PackedScene" uid="uid://dg1ofr16u7535" path="res://Scenes/risu.tscn" id="3_eiqog"]
 
 [node name="ClickerButton" type="Button" unique_id=1654807863]
 offset_left = 282.0
