@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://btin7ro0ci00y" path="res://Scripts/GameManager.gd" id="1_heejh"]
 [ext_resource type="PackedScene" uid="uid://ue3dx70ek6ax" path="res://Scenes/clicker_button.tscn" id="2_4lhv2"]
+[ext_resource type="Texture2D" uid="uid://doarulanr6eta" path="res://Assets/battleback2.png" id="2_g571m"]
 [ext_resource type="PackedScene" uid="uid://bkevr42k8tlnw" path="res://Scenes/passive_generator.tscn" id="3_heejh"]
 
 [node name="Game" type="Control" unique_id=901422257]
@@ -16,6 +17,14 @@ offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_heejh")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1652482842]
+layout_mode = 0
+offset_left = -23.0
+offset_top = -5.0
+offset_right = 1124.0
+offset_bottom = 658.0
+texture = ExtResource("2_g571m")
 
 [node name="ClickerButton" parent="." unique_id=1654807863 node_paths=PackedStringArray("Game") instance=ExtResource("2_4lhv2")]
 layout_mode = 0
