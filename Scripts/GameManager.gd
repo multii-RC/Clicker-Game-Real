@@ -19,7 +19,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	CoinLabel.text = "Coin: " + str(coin)
+	CoinLabel.text = "リス肉: " + str(coin)
 
 	#Reciever function for clicker button
 func _on_clicker_signal(ClickerStrength) -> void:
