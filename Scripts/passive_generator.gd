@@ -2,10 +2,8 @@ extends Control
 
 var PassiveCost: int
 
-# Move this to main script
 @onready var CoinScene: PackedScene = load("res://Scenes/risu.tscn")
 
-#@onready var CoinLabel: Label = $CoinLabel
 var PassiveStrength: int
 signal CoinGenerated(int)
 @onready var UpgradeCostLabel: Label = $UpgradeCostLabel
@@ -32,8 +30,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 		UpgradeCostLabel.text = "Upgrade: " + str(PassiveCost)
 
-
-
 func _on_upgrade_button_pressed() -> void:
 	print("Passive Upgrade Pressed")
 	# Check Cost
@@ -41,13 +37,13 @@ func _on_upgrade_button_pressed() -> void:
 		Game.coin = Game.coin - PassiveCost
 		PassiveStrength = (PassiveStrength + passiveScale) * 2
 		PassiveCost = PassiveCost * 10
-	# If have money: Double strength, Raise price	
+	# If have money: update strength, Raise price	
 	
 func _on_timer_timeout() -> void:
 	print("Passive Generation")
 	 #Emit Signal
 	CoinGenerated.emit(PassiveStrength)
-	 #Effects (Coin, Sound)
+	 #Effects
 	if PassiveStrength > 0:
 		var c = CoinScene.instantiate()
 		add_child(c)
