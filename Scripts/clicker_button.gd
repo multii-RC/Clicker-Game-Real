@@ -3,7 +3,7 @@ extends Button
 @export var ClickerStrength: int
 signal ClickerSignal(int)
 
-@onready var CoinScene: PackedScene = load("res://Scenes/coin.tscn")
+@onready var CoinScene: PackedScene = load("res://Scenes/risu.tscn")
 
 @export var Game: Node
 

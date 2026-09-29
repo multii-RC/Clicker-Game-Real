@@ -3,7 +3,7 @@ extends Control
 var PassiveCost: int
 
 # Move this to main script
-@onready var CoinScene: PackedScene = load("res://Scenes/coin.tscn")
+@onready var CoinScene: PackedScene = load("res://Scenes/risu.tscn")
 
 #@onready var CoinLabel: Label = $CoinLabel
 var PassiveStrength: int
