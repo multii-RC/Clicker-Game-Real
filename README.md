@@ -11,3 +11,6 @@ Artistic statement
 		bow for clicker
 		try to find a sound for the squiurrel
 		A forest background
+		
+	Itch Link: 
+		https://multilifestyles.itch.io/risu-hunting
