@@ -5,6 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://doarulanr6eta" path="res://Assets/battleback2.png" id="2_g571m"]
 [ext_resource type="PackedScene" uid="uid://bkevr42k8tlnw" path="res://Scenes/passive_generator.tscn" id="3_heejh"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4lhv2"]
+load_path = "res://.godot/imported/bear_trap_asset-removebg-preview.png-daac544e4bbe509ff7a35272b8e2a048.ctex"
+
 [node name="Game" type="Control" unique_id=901422257]
 layout_mode = 3
 anchors_preset = 15
@@ -32,6 +35,7 @@ offset_left = 0.0
 offset_top = 0.0
 offset_right = 136.0
 offset_bottom = 141.0
+icon = SubResource("CompressedTexture2D_4lhv2")
 Game = NodePath("..")
 
 [node name="CoinLabel" type="Label" parent="." unique_id=429810311]

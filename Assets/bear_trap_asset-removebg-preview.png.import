@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gyg8pitsdvo3"
-path="res://.godot/imported/battleback2.png-8676e4ce7d968a10e2dc8a566cc44228.ctex"
+uid="uid://bld0nvkyqf8bg"
+path="res://.godot/imported/bear_trap_asset-removebg-preview.png-daac544e4bbe509ff7a35272b8e2a048.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://battleback2.png"
-dest_files=["res://.godot/imported/battleback2.png-8676e4ce7d968a10e2dc8a566cc44228.ctex"]
+source_file="res://Assets/bear_trap_asset-removebg-preview.png"
+dest_files=["res://.godot/imported/bear_trap_asset-removebg-preview.png-daac544e4bbe509ff7a35272b8e2a048.ctex"]
 
 [params]
 
