@@ -79,6 +79,10 @@ script = ExtResource("1_g537i")
 position = Vector2(1, 2)
 shape = SubResource("CircleShape2D_nmvex")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1481034276]
+position = Vector2(2.75, 1.75)
+scale = Vector2(2.6333334, 2.2187502)
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2085505485]
 position = Vector2(2.7500153, 1.75)
 scale = Vector2(2.6333334, 2.2187502)
